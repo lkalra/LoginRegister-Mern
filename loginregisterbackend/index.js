@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors())
 
 function dbconnect(){
-    mongoose.connect("mmongodb+srv://admin:test123@cluster0.yzp4dyk.mongodb.net/?retryWrites=true&w=majority/db").then(()=>{console.log("connected");}).catch((err)=>{console.log(err.message);})
+    mongoose.connect("mongodb+srv://admin:test123@cluster0.yzp4dyk.mongodb.net/?retryWrites=true&w=majority/db").then(()=>{console.log("connected");}).catch((err)=>{console.log(err.message);})
 }
 
 dbconnect();
